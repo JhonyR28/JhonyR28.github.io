@@ -1,105 +1,118 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Consultoría Ambiental y Tecnológica</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Consultoría Ambiental y Tecnológica</title>
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+  <!-- Animate.css -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!-- Encabezado -->
-    <header class="animate__animated animate__fadeInDown">
-        <div class="logo">
-            <img src="assets/logo.png" alt="Logo de la consultoría">
+  <!-- Encabezado -->
+  <header class="animate__animated animate__fadeInDown">
+    <div class="container header-container">
+      <div class="logo">
+        <img src="assets/CLIMA.svg" alt="Logo de la consultoría">
+      </div>
+      <nav>
+        <ul>
+          <li><a href="#inicio">Inicio</a></li>
+          <li><a href="#proyectos">Proyectos</a></li>
+          <li><a href="#servicios">Servicios</a></li>
+          <li><a href="#contacto">Contacto</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Sección Hero -->
+  <section id="inicio" class="hero animate__animated animate__fadeIn">
+    <div class="hero-overlay"></div>
+    <div class="container hero-content">
+      <h1>Soluciones Innovadoras para el Futuro</h1>
+      <p>Especialistas en consultoría ambiental, meteorológica y tecnológica.</p>
+      <a href="#proyectos" class="cta-button">Ver Proyectos</a>
+    </div>
+  </section>
+
+  <!-- Sección Proyectos -->
+  <section id="proyectos" class="projects">
+    <div class="container">
+      <h2 class="section-title">Nuestros Proyectos</h2>
+      <div class="project-grid">
+        <div class="project-item animate__animated animate__zoomIn">
+          <img src="assets/prototipo1.jpeg" alt="Prototipo 1">
+          <h3>Proyecto Meteorológico</h3>
+          <p>Desarrollo de modelos predictivos para el clima.</p>
         </div>
-        <nav>
-            <ul>
-                <li><a href="#inicio">Inicio</a></li>
-                <li><a href="#proyectos">Proyectos</a></li>
-                <li><a href="#servicios">Servicios</a></li>
-                <li><a href="#contacto">Contacto</a></li>
-            </ul>
-        </nav>
-    </header>
-
-    <section id="inicio" class="hero animate__animated animate__fadeIn">
-        <div class="hero-content">
-            <h1>Soluciones Innovadoras para el Futuro</h1>
-            <p>Especialistas en consultoría ambiental, meteorológica y tecnológica.</p>
-            <a href="#proyectos" class="cta-button">Ver Proyectos</a>
+        <div class="project-item animate__animated animate__zoomIn">
+          <img src="assets/prototipo2.jpeg" alt="Prototipo 2">
+          <h3>Proyecto Agrícola</h3>
+          <p>Planificación agrícola sostenible con sensores IoT.</p>
         </div>
-    </section>
+      </div>
+    </div>
+  </section>
 
-    <!-- Sección Proyectos -->
-    <section id="proyectos" class="projects">
-        <h2 class="section-title">Nuestros Proyectos</h2>
-        <div class="project-grid">
-            <div class="project-item animate__animated animate__zoomIn">
-                <img src="assets/prototipo1.jpeg" alt="Prototipo 1">
-                <h3>Proyecto Meteorológico</h3>
-                <p>Desarrollo de modelos predictivos para el clima.</p>
-            </div>
-            <div class="project-item animate__animated animate__zoomIn">
-                <img src="assets/prototipo2.jpeg" alt="Prototipo 2">
-                <h3>Proyecto Agrícola</h3>
-                <p>Planificación agrícola sostenible con sensores IoT.</p>
-            </div>
+  <!-- Sección Servicios -->
+  <section id="servicios" class="services">
+    <div class="container">
+      <h2 class="section-title">Nuestros Servicios</h2>
+      <div class="service-list">
+        <!-- Servicio 1 -->
+        <div class="service-item animate__animated animate__fadeInUp">
+          <img src="assets/ambiental.jpeg" alt="Consultoría Ambiental" class="service-image">
+          <div class="service-content">
+            <h3>Mantenimiento Instrumental</h3>
+            <p>Limpieza y soluciones sostenibles para instrumentos meteorológicos.</p>
+            <button class="view-more">Ver más</button>
+          </div>
         </div>
-    </section>
-
-    <!-- Sección Servicios -->
-    <section id="servicios" class="services">
-        <h2 class="section-title">Nuestros Servicios</h2>
-        <div class="service-list">
-            <!-- Servicio 1 -->
-            <div class="service-item animate__animated animate__fadeInUp">
-                <img src="assets/ambiental.jpeg" alt="Consultoría Ambiental" class="service-image">
-                <div class="service-content">
-                    <h3>Mantenimiento instrumental</h3>
-                    <p>Limpieza y soluciones sostenibles.</p>
-                    <button class="view-more">Ver más</button>
-                </div>
-            </div>
-
-            <!-- Servicio 2 -->
-            <div class="service-item animate__animated animate__fadeInUp">
-                <img src="assets/meteorologico.png" alt="Pronósticos Meteorológicos" class="service-image">
-                <div class="service-content">
-                    <h3>Pronósticos Meteorológicos</h3>
-                    <p>Modelos avanzados para predecir el clima.</p>
-                    <button class="view-more">Ver más</button>
-                </div>
-            </div>
-
-            <!-- Servicio 3 -->
-            <div class="service-item animate__animated animate__fadeInUp">
-                <img src="assets/tecnologia.jpeg" alt="Tecnología Innovadora" class="service-image">
-                <div class="service-content">
-                    <h3>Tecnología Innovadora</h3>
-                    <p>Desarrollo de software y hardware personalizado.</p>
-                    <button class="view-more">Ver más</button>
-                </div>
-            </div>
+        <!-- Servicio 2 -->
+        <div class="service-item animate__animated animate__fadeInUp">
+          <img src="assets/meteorologico.png" alt="Pronósticos Meteorológicos" class="service-image">
+          <div class="service-content">
+            <h3>Pronósticos Meteorológicos</h3>
+            <p>Modelos avanzados para predecir el clima con precisión.</p>
+            <button class="view-more">Ver más</button>
+          </div>
         </div>
-    </section>
+        <!-- Servicio 3 -->
+        <div class="service-item animate__animated animate__fadeInUp">
+          <img src="assets/tecnologia.jpeg" alt="Tecnología Innovadora" class="service-image">
+          <div class="service-content">
+            <h3>Tecnología Innovadora</h3>
+            <p>Desarrollo de software y hardware personalizado para soluciones IoT.</p>
+            <button class="view-more">Ver más</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
-    <!-- Sección Contacto -->
-    <section id="contacto" class="contact">
-        <h2 class="section-title">Contacto</h2>
-        <form class="contact-form">
-            <input type="text" placeholder="Nombre" required>
-            <input type="email" placeholder="Correo Electrónico" required>
-            <textarea placeholder="Mensaje" rows="5" required></textarea>
-            <button type="submit" class="cta-button">Enviar</button>
-        </form>
-    </section>
+  <!-- Sección Contacto -->
+  <section id="contacto" class="contact">
+    <div class="container">
+      <h2 class="section-title">Contacto</h2>
+      <form class="contact-form">
+        <input type="text" placeholder="Nombre" required>
+        <input type="email" placeholder="Correo Electrónico" required>
+        <textarea placeholder="Mensaje" rows="5" required></textarea>
+        <button type="submit" class="cta-button">Enviar</button>
+      </form>
+    </div>
+  </section>
 
-    <!-- Pie de página -->
-    <footer>
-        <p>&copy; 2025 Consultoría Ambiental y Tecnológica CLIMA S.A.C. </p>
-    </footer>
+  <!-- Pie de página -->
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 Consultoría Ambiental y Tecnológica CLIMA S.A.C.</p>
+    </div>
+  </footer>
 
-    <script src="script.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>
