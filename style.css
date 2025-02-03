@@ -1,0 +1,298 @@
+/* Reset y estilos globales */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+    line-height: 1.6;
+  }
+  
+  .container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+  }
+  
+  /* Header */
+  header {
+    background-color: #044c94; /* Azul profundo */
+    padding: 1rem 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+  }
+  
+  .header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .logo img {
+    height: 50px;
+    width: auto;
+    transition: transform 0.3s ease;
+  }
+  
+  .logo img:hover {
+    transform: scale(1.1);
+  }
+  
+  nav ul {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+  }
+  
+  nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s ease;
+  }
+  
+  nav ul li a:hover {
+    color: #54ace4; /* Azul claro */
+  }
+  
+  /* Hero Section */
+  .hero {
+    position: relative;
+    background: url('assets/fondo2.jpg') no-repeat center center/cover;
+    background-position: 50% 30%; /* centra la imagen en ambas direcciones */
+    background-size: cover;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 0 20px;
+    color: #fff;
+  }
+  
+  .hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(28, 100, 164, 0.6); /* Basado en Azul petróleo (#1c64a4) con opacidad */
+    z-index: 1;
+  }
+  
+  .hero-content {
+    position: relative;
+    z-index: 2;
+  }
+  
+  .hero-content h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+  }
+  
+  .hero-content p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+  }
+  
+  .cta-button {
+    background-color: #34ace4; /* Turquesa brillante */
+    color: #fff;
+    padding: 15px 30px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+  }
+  
+  .cta-button:hover {
+    transform: scale(1.05);
+    background-color: #0895dc; /* Azul vibrante */
+  }
+  
+  /* Sección Títulos */
+  .section-title {
+    font-size: 2rem;
+    color: #24449c; /* Azul oscuro */
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+  
+  /* Sección Proyectos */
+  .projects {
+    padding: 100px 0;
+    background-color: #fff;
+  }
+  
+  .project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+  }
+  
+  .project-item {
+    background: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .project-item:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+  }
+  
+  .project-item img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+  }
+  
+  .project-item h3 {
+    padding: 1rem;
+    font-size: 1.5rem;
+    color: #24449c; /* Azul oscuro */
+  }
+  
+  .project-item p {
+    padding: 0 1rem 1rem;
+    font-size: 1rem;
+    color: #555;
+  }
+  
+  /* Sección Servicios */
+  .services {
+    padding: 100px 0;
+    background-color: #c3d8ea; /* Azul grisáceo */
+  }
+  
+  .service-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2.5rem;
+  }
+  
+  .service-item {
+    background: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .service-item:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+  }
+  
+  .service-image {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+  }
+  
+  .service-item:hover .service-image {
+    transform: scale(1.05);
+  }
+  
+  .service-content {
+    padding: 1rem;
+  }
+  
+  .service-content h3 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+    color: #24449c; /* Azul oscuro */
+  }
+  
+  .service-content p {
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 1rem;
+  }
+  
+  .view-more {
+    background-color: #34ace4; /* Turquesa brillante */
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .view-more:hover {
+    background-color: #0895dc; /* Azul vibrante */
+  }
+  
+  /* Sección Contacto */
+  .contact {
+    padding: 100px 0;
+    background-color: #fff;
+    text-align: center;
+  }
+  
+  .contact-form {
+    max-width: 600px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .contact-form input,
+  .contact-form textarea {
+    padding: 12px 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+  }
+  
+  .contact-form button {
+    background-color: #34ace4; /* Turquesa brillante */
+    color: #fff;
+    padding: 15px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+  }
+  
+  .contact-form button:hover {
+    background-color: #0895dc; /* Azul vibrante */
+    transform: scale(1.02);
+  }
+  
+  /* Footer */
+  footer {
+    background-color: #044c94; /* Azul profundo */
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+  }
+  
+  /* Responsive */
+  @media (max-width: 768px) {
+    .hero-content h1 {
+      font-size: 2.5rem;
+    }
+    nav ul {
+      gap: 1rem;
+    }
+    .project-item img {
+      height: 250px;
+    }
+    .service-image {
+      height: 200px;
+    }
+  }
+  
