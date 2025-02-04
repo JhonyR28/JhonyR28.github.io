@@ -33,15 +33,32 @@
     justify-content: space-between;
     align-items: center;
   }
-  
-  .logo img {
-    height: 50px;
-    width: auto;
-    transition: transform 0.3s ease;
+
+  /* Agrega display flex a la clase .logo para alinear la imagen y el texto en el centro */
+  .logo {
+    display: flex;
+    align-items: center;
   }
   
+  /* Estilos para el texto CLIMA */
+  .logo span {
+    color: #fff;
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-left: 1.5rem; /* Espacio entre la imagen y el texto */
+  }
+
+
+  .logo img {
+    height: 50px; /* la altura definida para conservar el layout del encabezado */
+    width: auto;
+    transition: transform 0.3s ease;
+    transform: scale(1.3); /* Escala el logo de forma predeterminada sin alterar el flujo del documento */
+    transform-origin: center;
+  }
+
   .logo img:hover {
-    transform: scale(1.1);
+    transform: scale(1.56);
   }
   
   nav ul {
